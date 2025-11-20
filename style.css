@@ -1,10 +1,7 @@
-/* Border box declaration 
-https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
   box-sizing: border-box;
 }
-/* inherit border-box on all elements in the universe and before and after
- */
+
 *, 
 *:before, 
 *:after {
@@ -13,10 +10,14 @@ html {
 
 body {
 	font-family: Arial, Geneva, sans-serif;
+    margin: 0;
+    padding: 20px;
 }
+
 a {
 	color: #2772B0;
 }
+
 .wrapper {
 	width: 97%;
 	max-width: 1200px;
@@ -27,25 +28,26 @@ a {
 
 div img {
 	width: 100%;
-	max-width: 225px; 
+	height: auto;
+    border-radius: 5px;
 }
 
-/* grid system -- mobile first! */
-/* flex contatiner */
+h3 {
+    margin-top: 0;
+}
 
 .row {
 	display: flex;
 	flex-flow: row wrap;
 }
 
-/* attribute selector to give some margin between columns and apply styles to flex items */
-
 [class*="col-"] {
 	margin-left: 4%;
+    margin-bottom: 20px;
 	flex: 0 0 92%;
+    padding: 15px;
+    border-radius: 5px;
 }
-
-/* Add background colors to see how much space each column is taking */
 
 .col-1 {
 	background-color: #A3CDD9;
@@ -55,7 +57,19 @@ div img {
 	background-color: #FFFCE6;
 }
 
-/* Tablet Landscape Screen Sizes */
+.col-3 {
+    background-color: #FFEBCD;
+}
+
+.col-4 {
+    background-color: #CDB79E;
+}
+
+.col-5 {
+    background-color: #E6E6FA;
+    text-align: center;
+}
+
 @media only screen and (min-width: 480px)  {
 	
   .col-1,
@@ -63,23 +77,38 @@ div img {
 		flex: 0 0 44%;
 	}
   
+  .col-3 {
+      flex: 0 0 92%;
+  }
   
-
-
-
+  .col-2.order-item {
+      order: -1;
+  }
 }
-/* Desktop screen Sizes */
+
 @media only screen and (min-width: 768px) {
-  
   
  	.col-1 {
 		flex: 0 0 20%;
 	}
   
-  
-  
 	.col-2 {
 		flex: 0 0 44%;
 	}
+    
+    .col-3 {
+        flex: 0 0 72%; 
+    }
 
+    .col-4 {
+        flex: 0 0 92%;
+    }
+
+    .col-5 {
+        flex: 0 0 16%;
+    }
+    
+    .col-2.order-item {
+        order: 0;
+    }
 }
