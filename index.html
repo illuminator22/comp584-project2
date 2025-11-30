@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Doggos</title>
+    <title>Doggos - Grid Version</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
@@ -12,36 +12,36 @@
   <body>
     <div class="wrapper">
       
-      <!-- ROW 1: Standard 4 columns -->
-      <div class="row">
+      <h1>CSS Grid Layout</h1>
+
+      <div class="row grid-4">
         <article class="col-1">
           <h3>Boomer</h3>
           <img src="https://placedog.net/250/250/?id=5" alt="Boomer doggo.">
-          <p>Speak squeak toy stay tug bark take it dachshund leave it maltese. Lab poodle dog house puppies shake bite pomeranian spin, roll over poodle milk bone leave it.</p>
+          <p>Speak squeak toy stay tug bark take it dachshund leave it maltese.</p>
           <p><a href="#" target="_blank">Read more &gt;&gt;</a></p>
         </article>
         <article class="col-1">
           <h3>Charlie</h3>
           <img src="https://placedog.net/250/250/?id=6" alt="Charlie doggo">
-          <p>Tail poodle peanut butter puppies dog house, dog bone dog growl shake chase tail lap dog doberman pinscher poodle. Bulldog husky stand come collar greyhound.</p>
+          <p>Tail poodle peanut butter puppies dog house, dog bone dog growl.</p>
           <p><a href="#" target="_blank">Read more &gt;&gt;</a></p>
         </article>
         <article class="col-1">
           <h3>Pax</h3>
           <img src="https://placedog.net/250/250/?id=7" alt="Pax doggo">
-          <p>Leave it yorkshire terrier play dead leash down collar k9 spin poodle. German shephard heel leash husky bulldog dog k9. Sit come puppies leash leash collar leash.</p>
+          <p>Leave it yorkshire terrier play dead leash down collar k9 spin poodle.</p>
           <p><a href="#" target="_blank">Read more &gt;&gt;</a></p>
         </article>
         <article class="col-1">
           <h3>Scout</h3>
           <img src="https://placedog.net/250/250/?id=8" alt="Scout doggo">
-          <p>K9 squeak toy k9 dog bowl milk bone sit pretty squirrel sit. Jump dog bowl shake bring it leap Morkie growl take it, fetch puppy bring it vet. Rottweiler bulldog.</p>
+          <p>K9 squeak toy k9 dog bowl milk bone sit pretty squirrel sit.</p>
           <p><a href="#" target="_blank">Read more &gt;&gt;</a></p>
         </article>
       </div>
 
-      <!-- ROW 2: Standard 2 columns -->
-      <div class="row">
+      <div class="row grid-2">
         <article class="col-2">
           <h3>Yoda</h3>
           <img src="https://placedog.net/250/200/?id=9" alt="Yoda doggo">
@@ -56,51 +56,46 @@
         </article>
       </div>
 
-      <!-- ROW 3: 1 Column Item X 3 Column Item -->
-      <div class="row">
+      <div class="row grid-asym">
         <article class="col-1">
             <h3>Lenny</h3>
             <img src="https://placedog.net/250/250/?id=11" alt="Lenny doggo">
-            <p>German shephard leap milk bone k9 rottweiler pomsky puppy. Collar stand Morkie squeak toy catch puppy maltese pomeranian.</p>
+            <p>German shephard leap milk bone k9 rottweiler pomsky puppy.</p>
             <p><a href="#" target="_blank">Read more &gt;&gt;</a></p>
         </article>
         <article class="col-3">
             <h3>Wendell</h3>
-            <!-- Wider image for wider column -->
             <img src="https://placedog.net/600/200/?id=12" alt="Wendell doggo">
             <p>Dog toy puppy bulldog heel, rottweiler great dance heel maltese take it bring it. English mastiff paw take it roll over tug growl, leash doberman pinscher leave it poodle st bernard vet fetch. Leap leash paw dog toy lap dog tail Morkie.</p>
             <p><a href="#" target="_blank">Read more &gt;&gt;</a></p>
         </article>
       </div>
 
-      <!-- ROW 4: 4 Column Wide Single Item (Full Banner) -->
       <div class="row">
         <article class="col-4">
             <h3>Riggs</h3>
             <img src="https://placedog.net/800/200/?id=13" alt="Riggs doggo">
-            <p>Speak squeak toy stay tug bark take it dachshund leave it maltese. Lab poodle dog house puppies shake bite pomeranian spin, roll over poodle milk bone leave it. Puppies shake play dead maltese kibbles roll over collar vet german shephard.</p>
+            <p>Speak squeak toy stay tug bark take it dachshund leave it maltese. Lab poodle dog house puppies shake bite pomeranian spin, roll over poodle milk bone leave it.</p>
             <p><a href="#" target="_blank">Read more &gt;&gt;</a></p>
         </article>
       </div>
 
-      <!-- ROW 5: 1-2-1 Layout -->
-      <div class="row">
-        <!-- Added "order-item" class to help us move these around with CSS -->
-        <article class="col-1 order-item">
+      <div class="row grid-sandwich">
+        <article class="col-1 item-left">
             <h3>Remy</h3>
             <img src="https://placedog.net/250/250/?id=14" alt="Remy doggo">
             <p>Leave it yorkshire terrier play dead leash down collar k9 spin poodle.</p>
             <p><a href="#" target="_blank">Read more &gt;&gt;</a></p>
         </article>
         
-        <article class="col-2 order-item">
+        <article class="col-2 item-center">
             <h3>Rambo</h3>
             <img src="https://placedog.net/400/250/?id=15" alt="Rambo doggo">
             <p>Tail poodle peanut butter puppies dog house, dog bone dog growl shake chase tail lap dog.</p>
             <p><a href="#" target="_blank">Read more &gt;&gt;</a></p>
         </article>
         
-        <article class="col-1 order-item">
+        <article class="col-1 item-right">
             <h3>Zeke</h3>
             <img src="https://placedog.net/250/250/?id=16" alt="Zeke doggo">
             <p>K9 squeak toy k9 dog bowl milk bone sit pretty squirrel sit. Jump dog bowl shake bring it.</p>
@@ -108,8 +103,7 @@
         </article>
       </div>
 
-      <!-- ROW 6: Unique Choice (5 Items per row) -->
-      <div class="row">
+      <div class="row grid-5">
         <article class="col-5">
             <h3>Tiny</h3>
             <img src="https://placedog.net/200/200/?id=17" alt="dog">
@@ -134,5 +128,4 @@
 
     </div>
   </body>
-
 </html>
